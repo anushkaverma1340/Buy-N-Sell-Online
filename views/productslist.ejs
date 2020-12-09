@@ -1,0 +1,14 @@
+<%- include("partials/header") -%>
+
+<% productsList.forEach(function(product){ %>
+  <form class="home-form-div" action="<%=route%>" method="post">
+    <% product.images.forEach(function(image){ %>
+      <img src="../public/uploads/<%=image%>" alt="">
+    <% }); %>
+    <h4><%=product.name%></h4>
+    <p><b>Rating(1-5):</b> <%=product.rating%></p>
+    <button type="submit" name="productPageButton" value="<%=product._id%>" class="btn btn-info">Open</button>
+  </form>
+<% }); %>
+
+<%- include("partials/footer") -%>

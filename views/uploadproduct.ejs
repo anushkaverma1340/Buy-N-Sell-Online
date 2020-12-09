@@ -1,0 +1,31 @@
+<%- include('partials/header') -%>
+
+<form class="home-form-div" action="/upload-product" method="post" enctype="multipart/form-data">
+
+  <div class="mb-3">
+    <input class="form-control btn btn-outline-dark" type="file" id="formFileMultiple" placeholder="Product Images" name="productImages" multiple>
+  </div><br>
+
+  <!-- <input name="productImages" multiple><br> -->
+  <input class="input" type="text" name="uploadProductName" placeholder="  Name" autocomplete="off" required><br>
+  <input class="input" type="number" name="uploadProductRating" placeholder="  Rating(1-5)" min="1" max="5" autocomplete="off" required><br>
+  <input class="input" type="textarea" name="uploadproductAbout" rows="8" cols="80" placeholder="  About" autocomplete="off" required><br>
+  <select class="select-input" name="uploadProductCategory" required>
+    <option value="" disabled selected hidden>Category</option>
+    <option value="Cars & Automobiles">Cars & Automobiles</option>
+    <option value="Properties">Properties</option>
+    <option value="Mobiles">Mobiles</option>
+    <option value="Jobs">Jobs</option>
+    <option value="Bikes">Bikes</option>
+    <option value="Electronic Appliances">Electronic Appliances</option>
+    <option value="Vehicles & Spares">Vehicles & Spares</option>
+    <option value="Furniture">Furniture</option>
+    <option value="Fashion">Fashion</option>
+    <option value="Books, Sports & Hobbies">Books, Sports & Hobbies</option>
+    <option value="Pets">Pets</option>
+    <option value="Services">Services</option>
+  </select><br>
+  <button type="submit" class="btn btn-info" name="button"><i class="fa fa-upload"></i> Upload</button>
+</form>
+
+<%- include('partials/footer') -%>

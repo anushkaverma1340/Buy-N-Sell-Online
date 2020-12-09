@@ -1,0 +1,18 @@
+<%- include("partials/header") -%>
+
+<div class="home-form-div">
+
+  <% product.images.forEach(function(image){ %>
+    <img src="../public/uploads/<%=image%>" alt="">
+  <% }); %>
+
+  <h1><%=product.name%></h1>
+  <p><b>Rating(1-5):</b> <%=product.rating%></p>
+  <p><b>Category:</b> <%=product.category%></p>
+  <p><b>About:</b> <%=product.productAbout%></p>
+  <p><b>Owner's Name:</b> <%=product.sellerName%></p>
+  <p><b>Owner's Contact Number:</b> <%=product.sellerContactNumber%></p>
+  <p><b>Owner's Email:</b> <%=product.sellerEmail%></p>
+</div>
+
+<%- include("partials/footer") -%>

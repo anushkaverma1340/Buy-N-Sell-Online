@@ -1,0 +1,18 @@
+<%- include("partials/header") -%>
+
+<% productsToSell.forEach(function(product){ %>
+  <form class="home-form-div" action="products-to-sell" method="post">
+    <% product.images.forEach(function(image){ %>
+      <img src="../public/uploads/<%=image%>" alt="">
+    <% }); %>
+    <p><b>Name</b>: <%=product.name%></p>
+    <p><b>Rating(1-5)</b>: <%=product.rating%></p>
+    <p><b>Category</b>: <%=product.category%></p>
+    <p><b>About</b>: <%=product.productAbout%></p>
+    <button class="btn btn-dark" type="submit" name="soldButton" value="<%=product._id%>"><i class="fa fa-check-circle"></i>  Sold</button>
+  </form>
+<% }); %>
+
+<a class="input btn btn-info" href="/upload-product"><i class="fa fa-upload"></i> Upload Product</a>
+
+<%- include("partials/footer") -%>

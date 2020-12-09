@@ -1,0 +1,68 @@
+html {
+  height:100%;
+}
+
+body{
+  height:100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: white;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.body-div{
+  height:100%;
+}
+
+.header{
+  background-color: #01c5c4;
+  padding: 0 auto;
+}
+
+.logo{
+  font-family: 'Nerko One', cursive;
+  font-size: 3rem;
+  padding:5px;
+  margin: auto 10px;
+}
+
+.title-section{
+  background-color: #01c5c4;
+  color: #eeeeee;
+  font-family: 'Archivo', sans-serif;
+  padding: 100px;
+}
+
+.input{
+  margin:5px;
+  border-radius: 5px;
+  width:200px;
+}
+
+.categories{
+  margin: auto 50px;
+}
+
+.categories-image {
+  width:100px;
+}
+
+.categories-cards {
+  margin: 50px auto;
+}
+
+.main-footer{
+  background-color: #01c5c4;
+  color: white;
+  border-bottom: 0;
+  display: block;
+}
+
+/* font-family: 'Archivo', sans-serif;
+font-family: 'Catamaran', sans-serif;
+font-family: 'Nerko One', cursive; */
+
+/* #19d3da */
+
+/* flaticon */

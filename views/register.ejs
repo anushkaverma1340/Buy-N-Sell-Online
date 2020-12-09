@@ -1,0 +1,22 @@
+<%- include('partials/header') -%>
+
+<div class="home-form-div">
+  <h1>Register</h1>
+  <form action="/register" method="POST" enctype="multipart/form-data">
+
+    <div class="mb-3">
+      <input class="form-control btn btn-outline-dark" type="file" id="formFileMultiple" name="profileImage" multiple>
+    </div><br>
+
+    <!-- <input class="imageInput" type="file" name="profileImage" value=""><br /> -->
+    <input class="input" autocomplete="off" type="text" name="loginname" placeholder="  Name" required><br>
+    <input class="input" autocomplete="off" type="number" name="loginnumber" placeholder="  Contact Number" required><br>
+    <input class="input" autocomplete="off" type="email" name="loginemail" placeholder="  E-Mail" required><br>
+    <input class="input" autocomplete="off" type="text" name="loginusername" placeholder="  Username" required><br>
+    <input class="input" autocomplete="off" type="password" name="loginpassword" placeholder="  Password" required><br>
+    <button class="btn btn-dark" type="submit" name="button">Submit</button>
+  </form><br>
+
+</div>
+
+<%- include('partials/footer') -%>
